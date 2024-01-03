@@ -4,12 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>CV Landing Page</title>
+    <title>Esthetic CV Landing Page</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
+            font-family: 'Poppins', sans-serif;
             background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .profile-section {
+            background: linear-gradient(45deg, #3498db, #8e44ad);
+            color: #ffffff;
+            text-align: center;
+            padding: 50px 0;
         }
 
         .profile-img {
@@ -17,31 +27,37 @@
             height: 150px;
             object-fit: cover;
             border-radius: 50%;
+            border: 5px solid #ffffff;
+            margin-bottom: 20px;
         }
 
-        .header-section {
-            background-color: #007bff;
-            color: #ffffff;
-            padding: 20px;
-            text-align: center;
+        .profile-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .profile-job {
+            font-size: 18px;
+            font-style: italic;
         }
 
         .main-content {
-            margin-top: 20px;
-            padding: 20px;
+            padding: 50px 20px;
+            text-align: justify;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="container">
+    <div class="container-fluid">
 
-        <!-- Header Section -->
-        <div class="header-section">
+        <!-- Profile Section -->
+        <div class="profile-section">
             <img src="your-profile-image.jpg" alt="Profile Picture" class="profile-img">
-            <h1>Your Name</h1>
-            <p>Web Developer</p>
+            <div class="profile-name">Your Name</div>
+            <div class="profile-job">Web Developer</div>
         </div>
 
         <!-- Main Content -->
